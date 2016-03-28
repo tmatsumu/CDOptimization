@@ -1,0 +1,94 @@
+\documentclass[9pt,twocolumn,twoside]{osajnl}
+
+%% packages we're adding.
+\usepackage[]{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{color}
+%%
+
+%% Defining commands
+\def\micron{$\mu$m}
+
+% Jaffe's definitions
+\def\mathrelfun#1#2{\lower3.6pt\vbox{\baselineskip0pt\lineskip.9pt
+  \ialign{$\mathsurround=0pt#1\hfil##\hfil$\crcr#2\crcr\sim\crcr}}}
+\def\simlt{\mathrel{\mathpalette\mathrelfun <}}
+\def\simgt{\mathrel{\mathpalette\mathrelfun >}}
+
+%define abbreviations of journals
+\newcommand\ao{{\it Appl.~Optics~}}
+\newcommand\mnras{{\it MNRAS~}}
+\newcommand\apjs{{\it Ap.~J.~Suppl.~}}
+\newcommand\araa{{\it ARAA~}}
+\newcommand\nat{{\it Nature}}
+
+\journal{ao} % Choose journal (ao, ol, josaa, josab)
+
+\setboolean{shortarticle}{false} % true = letter, false = research article
+
+\title{Wide telecentric field-of-view crossed Dragone optical system using anamorphic mirror surfaces}
+
+\author[1]{Author1}
+
+\affil[1]{Affiliation1, address1, Japan}
+
+\affil[1]{Corresponding author: ***@***.jp}
+
+\dates{Compiled \today}
+
+\ociscodes{}
+% (050.2555) Form birefringence; 
+
+\doi{\url{http://dx.doi.org/10.1364/ao.XX.XXXXXX}}
+
+\begin{abstract}
+
+\end{abstract}
+
+\setboolean{displaycopyright}{true}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+\ifthenelse{\boolean{shortarticle}}{\abscontent}{}
+
+\section{Introduction (Matsumura)}
+
+
+\section{Design Requirements (Sugai)}
+
+\section{Design parameters and optimization (Kashima)}
+
+
+\section{Results (Kashima)}
+\subsection{Strahl ratio}
+
+\subsection{Point spread function}
+
+\section{Discussions (Sekimoto)}
+%\subsection{F number}
+
+
+\section{Conclusions}
+
+
+\begin{figure}[htbp] 
+   \centering
+%   \includegraphics[width=\linewidth]{} 
+   \caption{}
+   \label{}
+\end{figure}
+
+
+\section*{Acknowledgement}
+
+\bibliography{bibfile}
+
+\end{document}
+
